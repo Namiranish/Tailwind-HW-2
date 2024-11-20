@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/output.css">
+  <title>Tailwind-CW-1</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+  <!-- Container -->
+  <div class="w-4/5 max-w-3xl h-2/5 bg-white rounded-lg shadow-lg shadow-gray-500 overflow-hidden flex m-6">
+
+    <!-- Left Section (Image) -->
+    <div class="w-2/5 flex items-center justify-center bg-gray-200">
+      <!-- Image Container with smaller width and padding -->
+      <div class="bg-gray-300  rounded-lg">
+        <img 
+          src="https://www.beercss.com/classic-utility-jacket.jpg" 
+          alt="Retro Shoe" 
+          class="rounded-lg w-full h-auto"
+        />
+      </div>
+    </div>
+    <!-- Right Section (Details) -->
+    <div class="w-3/5">
+      <!-- Top Section (35% height, black background) -->
+      <div class="h-[35%] bg-white text-black flex flex-col justify-around px-6">
+        <div class="flex items-center mt-5">
+          <h1 class="text-3xl font-bold">Classic Utility Jacket</h1>
+          <p class="text-lg font-semibold ml-10 text-gray-600 ">$110.00</p>
+        </div>
+        <!-- Flex container for price and stock -->
+        <div class="flex gap-5 items-center mt-2">
+          <p class="text-sm uppercase text-gray-600 font-semibold">In Stock</p>
+        </div>
+      </div>
+      <!-- Bottom Section (65% height, white background) -->
+      <div class="h-[65%] bg-white p-6 flex flex-col justify-between">
+        <!-- Sizes Section -->
+        <div class="flex space-x-4 mb-4">
+          <div class="w-10 h-10 bg-black text-white flex items-center justify-center rounded shadow-md">XS</div>
+          <div class="w-10 h-10 text-gray-600  flex items-center justify-center ">S</div>
+          <div class="w-10 h-10 text-gray-600 flex items-center justify-center ">M</div>
+          <div class="w-10 h-10 text-gray-600  flex items-center justify-center ">L</div>
+          <div class="w-10 h-10 text-gray-600  flex items-center justify-center ">XL</div>
+        </div>
+
+        <!-- HR Tag for Separation -->
+        <hr class="border-gray-300 my-4">
+
+        <!-- Buttons Section -->
+        <div class="flex items-center space-x-20">
+          <div class="flex items-center space-x-4">
+          <!-- Buy Now Button -->
+          <button class="px-6 py-2 bg-black text-white font-bold border border-gray-300 rounded-lg shadow-md">
+            Buy Now
+          </button>
+          <!-- Add to Bag Button -->
+          <button class="px-6 py-2 bg-white text-gray-600  border border-gray-300 rounded-lg shadow-md">
+            Add to Bag
+          </button></div>
+          <!-- Heart Icon as a Button -->
+          <button class="text-gray-500 text-2xl px-3 py-1  font-semibold border border-gray-300 p-2 rounded-lg hover:bg-gray-200">
+            ♥
+          </button>
+        </div>
+
+        <!-- Shipping Info -->
+        <div class="text-gray-600 mt-5">
+            Free shipping on all continental US orders.
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
